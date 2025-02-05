@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function(){
+            $('#btn3').click(function(){
+                const varl=localStorage.getItem("data");
+                const myobj=JSON.parse(varl);
+                $("#name1").val(myobj.name);
+                $("#number2").val(myobj.number);
+                $("#email2").val(myobj.email); 
+            });
+        });
+    </script>
+    <button id="btn3"> Display</button>
+    <div id="div" style="display: flex; align-items: center;justify-content: center; padding-top: 10px;">
+        <form >
+            <label for="Name">Enter Your Name :</label>
+            <input id="name1" type="text" placeholder="Enter Your Name" ><br><br>
+            <label for="Mobile No">Enter the Phone:</label>
+            <input  id="number2" type="number" placeholder="Number"><br><br>
+            <label for="Email-Id">Enter the Email:</label>
+            <input  id="email2" type="Email-Id" placeholder="Email-Id">
+             <br>
+            
+        </form>
+        </div>
+
+</body>
+</html>
