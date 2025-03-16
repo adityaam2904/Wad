@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    color: #333;
+}
+.navbar {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+    background-color: #2C3E50;
+    color: #ECF0F1;
+}
+.navbar ul {
+    margin: 0 15px;
+    font-size: 18px;
+}
+.navbar ul a {
+    text-decoration: none;
+    color: #ECF0F1;
+    transition: color 0.3s;
+}
+.navbar ul a:hover {
+    color: #F39C12;
+}
+ul:hover {
+    border: 1.5px solid #F39C12;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #3498DB;
+    color: white;
+}
+.hero h1 {
+    font-size: 2.5em;
+    animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+.featured-cars {
+    text-align: center;
+    padding: 20px;
+    background-color: #ECF0F1;
+}
+.car-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.car-item {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+.car-item:hover {
+    transform: scale(1.05);
+}
+#card {
+    display: flex;
+}
+footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}

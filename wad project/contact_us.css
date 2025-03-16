@@ -1,0 +1,49 @@
+body {
+    background: url('https://i0.wp.com/www.theengineeringchoice.com/wp-content/uploads/2021/09/ELECTRIC-CAR.jpg?resize=840%2C473&ssl=1') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+#contact_form{
+    height: 350px;
+    width: 400px;
+    border: 2px solid;
+    background-color: rgb(242, 226, 242);
+    padding: 20px;
+    margin: 50px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+}
+a{
+    text-decoration: none;
+}
+#box{
+    color: white;
+    height: 20px;
+    width: 250px;
+    border-radius: 3px;
+    padding: 5px;
+    
+}
+H1{
+    text-align: center;
+}
+
+/* Submit Button */
+#Submit{
+    width: 90%;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    background: #0056b3;
+}
+
